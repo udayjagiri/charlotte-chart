@@ -1,7 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using NUnit.Framework;
 using web_app.Helpers;
-using Assert = NUnit.Framework.Assert;
 
 namespace web_app.Tests.Controllers
 {
@@ -12,14 +10,14 @@ namespace web_app.Tests.Controllers
         public void GivenInputIsIntegerThenReturnTrue()
         {
             var result = StringHelper.IsDecimal("10");
-            Assert.That(result,Is.True);
+            Assert.IsTrue(result);
         }
 
         [TestMethod]
         public void GivenInputIsStringThenReturnFalse()
         {
             var result = StringHelper.IsDecimal("abc");
-            Assert.That(result, Is.False);
+            Assert.IsFalse(result);
         }
     }
 }
