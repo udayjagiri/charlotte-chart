@@ -109,4 +109,14 @@ namespace web_app.Models
         [Display(Name = "Email")]
         public string Email { get; set; }
     }
+
+    public class ExpensesViewModel
+    {
+        [Display(Name = "amount")]
+        public string Amount { get; set; }
+        [Display(Name = "type")]
+        public string Type { get; set; }
+
+        public string Errors { get; set; }
+    }
 }

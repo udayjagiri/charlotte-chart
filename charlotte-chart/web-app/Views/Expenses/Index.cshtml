@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Expenses Page";
+}
+
+
+<div id="page-wrapper">
+ 
+        <div class="panel-body">
+            <form action="/Expenses" method="post">
+                <fieldset>
+                    <div class="form-group">
+                        <label>Enter Currency</label>
+                        <input class="form-control" placeholder="e.g £10.00" id ="Amount" name="Amount" type="text" autofocus="" />
+                    </div>
+                    <div class="form-group">
+                        <label>Select Expense Type</label><select class="form-control" id="Type" name="Type">
+                            <option value="" disabled selected>Select Expense Type</option>
+                            <option>Personal</option>
+                            <option>Utility</option>
+                            <option>Miscellenous</option>
+                        </select>
+
+                    </div>
+                    <input class="btn btn-lg btn-success btn-block" id="submit" type="submit" value="Submit" />
+                    @ViewBag.Errors
+                    <!-- Change this to a button or input when using this as a form -->
+                    @*                <a href="index.html" class="btn btn-lg btn-success btn-block">Login</a>*@
+                </fieldset>
+            </form>
+        </div>
+
+    
+
+
+</div>
