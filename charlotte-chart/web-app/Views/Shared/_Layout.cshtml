@@ -7,13 +7,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("/Content/vendor/font-awesome/css/font-awesome.min.css")
-    @Styles.Render("/Content/vendor/morrisjs/morris.css")
-    @Styles.Render("/Content/dist/css/sb-admin-2.css")
-    @Styles.Render("/Content/vendor/metisMenu/metisMenu.min.css")
-    @Styles.Render("/Content/vendor/bootstrap/css/bootstrap.min.css")
+@*    @Styles.Render("..../Content/vendor/font-awesome/css/font-awesome.min.css")*@
+@*    @Styles.Render("..../Content/vendor/morrisjs/morris.css")*@
+@*    @Styles.Render("..../Content/dist/css/sb-admin-2.css")*@
+@*    @Styles.Render("..../Content/vendor/metisMenu/metisMenu.min.css")*@
+@*    @Styles.Render("..../Content/vendor/bootstrap/css/bootstrap.min.css")*@
 
-@*    @Styles.Render("~/Content/css")*@
+    @Styles.Render("~/Content/css")
 @*    @Scripts.Render("~/bundles/modernizr")*@
 
 </head>
@@ -929,16 +929,16 @@
     </footer>
 </div>
 
-    @Scripts.Render("~/bundles/jquery.min.js")
-    @Scripts.Render("~/bundles/bootstrap.min.js")
-    @Scripts.Render("~/bundles/metisMenu.min.js")
-    @Scripts.Render("~/bundles/raphael.min.js")
-    @Scripts.Render("~/bundles/morris.min.js")
-    @Scripts.Render("~/bundles/morris-data.js")
-    @Scripts.Render("~/bundles/sb-admin-2.js")
+@*    @Scripts.Render("~/Content/vendor/jquery/jquery.min.js")*@
+@*    @Scripts.Render("~/Content/vendor/bootstrap/js/bootstrap.min.js")*@
+@*    @Scripts.Render("~/Content/vendor/metisMenu/metisMenu.min.js")*@
+@*    @Scripts.Render("~/Content/vendor/raphael/raphael.min.js")*@
+@*    @Scripts.Render("~/Content/vendor/morrisjs/morris.min.js")*@
+@*    @Scripts.Render("~/Content/data/morris-data.js")*@
+@*    @Scripts.Render("~/Content/dist/js/sb-admin-2.js")*@
 
-@*    @Scripts.Render("~/bundles/jquery")*@
+    @Scripts.Render("~/bundles/main")
 @*    @Scripts.Render("~/bundles/bootstrap")*@
-    @RenderSection("scripts", required: false)
+@*    @RenderSection("scripts", required: false)*@
 </body>
 </html>
