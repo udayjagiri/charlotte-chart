@@ -15,13 +15,13 @@ namespace web_app
 
 
             bundles.Add(new ScriptBundle("~/bundles/main").Include(
-                "~/Content/vendor/jquery/jquery.min.js",
-                "~/Content/vendor/bootstrap/js/bootstrap.min.js",
-                "~/Content/vendor/metisMenu/metisMenu.min.js",
-                "~/Content/vendor/raphael/raphael.min.js",
-                "~/Content/vendor/morrisjs/morris.min.js",
-                "~/Content/data/morris-data.js",
-                "~/Content/dist/js/sb-admin-2.js"));
+                "~/Scripts/jquery.min.js",
+                "~/Scripts/bootstrap.min.js",
+                "~/Scripts/metisMenu.min.js",
+                "~/Scripts/raphael.min.js",
+                "~/Scripts/morris.min.js",
+                "~/Scripts/morris-data.js",
+                "~/Scripts/sb-admin-2.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
@@ -38,11 +38,11 @@ namespace web_app
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       //                      "~/Content/bootstrap.css",
                       //                      "~/Content/site.css",
-                      "~/Content/vendor/font-awesome/css/font-awesome.min.css",
-                      "~/Content/vendor/morrisjs/morris.css",
-                      "~/Content/dist/css/sb-admin-2.css",
-                      "~/Content/vendor/metisMenu/metisMenu.min.css",
-                      "~/Content/vendor/bootstrap/css/bootstrap.min.css"));
+                      "~/Content/font-awesome.min.css",
+                      "~/Content/morris.css",
+                      "~/Content/sb-admin-2.css",
+                      "~/Content/metisMenu.min.css",
+                      "~/Content/bootstrap.min.css"));
         }
     }
 }
