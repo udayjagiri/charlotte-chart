@@ -1,22 +1,23 @@
-﻿using NUnit.Framework;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using web_app.Helpers;
 
 namespace web_app.Tests.Controllers
 {
+    [TestClass]
     public class ExpensesControllerTest
     {
-        [Test]
+        [TestMethod]
         public void GivenInputIsIntegerThenReturnTrue()
         {
             var result = StringHelper.IsDecimal("10");
-            Assert.That(result,Is.True);
+            Assert.IsTrue(result);
         }
 
-        [Test]
+        [TestMethod]
         public void GivenInputIsStringThenReturnFalse()
         {
             var result = StringHelper.IsDecimal("abc");
-            Assert.That(result, Is.False);
+            Assert.IsFalse(result);
         }
     }
 }
