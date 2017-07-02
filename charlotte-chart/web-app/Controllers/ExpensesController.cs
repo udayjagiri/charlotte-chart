@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Configuration;
 using System.Data.SqlClient;
-using System.Web.Configuration;
 using System.Web.Mvc;
 using web_app.Helpers;
 using web_app.Models;
