@@ -41,7 +41,7 @@ namespace web_app.Controllers
                 myConnection.Open();
 
              
-                string dateTime = DateTime.Today.ToShortDateString();
+                DateTime dateTime = DateTime.Today;
 
                 string query = "INSERT INTO dbo.Expenses (Amount,Type,Date)VALUES (@Amount,@Type,@Date)";
 
